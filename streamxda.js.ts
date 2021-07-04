@@ -13,12 +13,13 @@ window.onload = () => {
 
 
     function disqusInit() {
+        var c = d.getElementById('comments');
+        if (!c) return;
         var d = document, s = d.createElement('script'), div = d.createElement('div');
         s.src = 'https://irobohawk.disqus.com/embed.js';
         s.setAttribute('data-timestamp', new Date().getTime().toString());
         (d.head || d.body).appendChild(s);
         div.setAttribute('id', 'disqus_thread');
-        var c = d.getElementById('comments');
         c.appendChild(div);
         var disqus_config = function () {
             this.page.url = location.href;
