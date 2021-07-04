@@ -19,3 +19,11 @@ div#header div {
     color: #262626;
     text-transform: capitalize;
 }
+
+#blog-title a {
+    text-decoration: none;
+    color: transparent;
+    text-transform: capitalize;
+    background: transparent url(https://cdn.streamxda.com/assets/streamxda.svg) no-repeat center;
+    background-size: 100%;
+}
