@@ -96,3 +96,11 @@ body #header {
 .box2 {
     background: white !important;
 }
+
+#b-navbar #b-navbar-logo {
+    background: none !important;
+}
+
+div#b-navbar {
+    display: none !important;
+}
