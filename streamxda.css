@@ -135,5 +135,8 @@ p.post-footer {
     color: transparent !important;
     text-transform: capitalize !important;
     background: transparent url(https://cdn.streamxda.com/assets/streamxda.svg) no-repeat center !important;
-    background-size: 100%;
+    background-size: 100% !important;
+    width: 183px !important;
+    height: 40px !important;
+    padding: 0 !important;
 }
