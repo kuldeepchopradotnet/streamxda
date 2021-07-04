@@ -61,6 +61,7 @@ body #header {
 .post-title {
     border: none !important;
     border-width: 0 !important;
+    font-size: 1.1rem;
 }
 
 #main3 {
@@ -76,11 +77,6 @@ body #header {
 
 .post {
     border: 1px #e9e9e9 solid !important;
-}
-
-.post-body {
-    border: 0 !important;
-    padding: 3% !important;
 }
 
 #sidebar {
@@ -117,4 +113,5 @@ body #header {
     padding: 3% !important;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    background: #fffbf5;
 }
