@@ -1,4 +1,4 @@
-.content-blog {
+#content {
     margin: 0px ! important;
     width: 100% !important;
 }
@@ -26,4 +26,25 @@ div#header div {
     text-transform: capitalize;
     background: transparent url(https://cdn.streamxda.com/assets/streamxda.svg) no-repeat center;
     background-size: 100%;
+}
+
+body #header {
+    margin-top: 0;
+}
+
+#blog-title a {
+    text-decoration: none;
+    color: transparent;
+}
+
+
+#footer div div {
+    background: transparent;
+    padding: 0 15px 8px;
+}
+
+#footer div {
+    background: white;
+    padding: 8px 0 0;
+    color: #fff;
 }
