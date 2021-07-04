@@ -76,7 +76,7 @@ body #header {
 }
 
 .post {
-    border: 1px #e9e9e9 solid !important;
+    border: 0 !important;
 }
 
 #sidebar {
@@ -114,4 +114,23 @@ body #header {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     background: #fffbf5;
+}
+
+
+.post-footer {
+    display: none !important;
+}
+
+
+html>body a.comment-link {
+    display: none !important;
+}
+
+p.post-footer {
+    border: 0 !important;
+}
+
+#comments {
+    margin: 1% 4% !important;
+    border: 0 !important;
 }

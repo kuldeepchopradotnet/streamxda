@@ -19,6 +19,7 @@ window.onload = () => {
         (d.head || d.body).appendChild(s);
         div.setAttribute('id', 'disqus_thread');
         var c = d.getElementById('comments');
+        //c.innerHTML = '';
         c.appendChild(div);
         var disqus_config = function () {
             this.page.url = location.href;
