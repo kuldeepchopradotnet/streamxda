@@ -106,11 +106,12 @@ body #header {
 .post-body {
     border: 0 !important;
     padding: 3% !important;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1rem !important;
+    font-family: 'Roboto', sans-serif !important;
     background: #fffbf5;
+    padding-left: 2% !important;
+    border-left: 3px solid #dfffcab8 !important;
 }
-
 
 .post-footer {
     display: none !important;
@@ -143,7 +144,7 @@ p.post-footer {
 
 
 .FeaturedPost .snippet-thumbnail {
-    float: left;
+    float: left !important;
     height: auto;
     margin-bottom: 2em;
     margin-right: 0;
@@ -183,4 +184,14 @@ a.timestamp-link, a:active.timestamp-link, a:visited.timestamp-link {
 
 .post-title, .post-title a, .post-title a:hover, .post-title a:visited {
     color: #a2502b;
+}
+
+
+
+.blogger {
+    display: none !important;
+}
+
+.widget-content {
+    display: none !important;
 }
