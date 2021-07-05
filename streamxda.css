@@ -145,13 +145,6 @@ p.post-footer {
 
 .FeaturedPost .snippet-thumbnail {
     float: left !important;
-    height: auto;
-    margin-bottom: 2em;
-    margin-right: 0;
-    overflow: hidden;
-    max-height: calc(600px + 2em);
-    max-width: 84%;
-    text-align: center;
     width: 45% !important;
     border-top: 3px solid #035f524a;
     border-bottom: 3px solid #035f524a;
@@ -167,6 +160,7 @@ p.post-footer {
     border-radius: 0px 11px 11px 0px;
     margin: 0 !important;
     height: 215px !important;
+    max-height: 215px !important;
     border-top: 3px solid #035f524a;
     border-bottom: 3px solid #035f524a;
     border-right: 3px solid #035f524a;
@@ -186,12 +180,7 @@ a.timestamp-link, a:active.timestamp-link, a:visited.timestamp-link {
     color: #a2502b;
 }
 
-
-
 .blogger {
     display: none !important;
 }
 
-.widget-content {
-    display: none !important;
-}
