@@ -184,3 +184,6 @@ a.timestamp-link, a:active.timestamp-link, a:visited.timestamp-link {
     display: none !important;
 }
 
+.image-attribution {
+    display: none;
+}
