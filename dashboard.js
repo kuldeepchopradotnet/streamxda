@@ -1,7 +1,6 @@
 
 console.log('location.pathname', location.pathname)
-if(location.pathname === '/'){
-document.getElementsByClassName("page").item(0).style.display = "none"
+
 const DIV = 'div',
             BODY = 'body',
             GRID_CONTAINER = 'grid-container',
@@ -14,7 +13,10 @@ const DIV = 'div',
             NEXT_BTN = 'next-btn'
 
         async function loadApp() {
-            renderPostUI();
+                    if(location.pathname === '/'){
+                        document.getElementsByClassName("page").item(0).style.display = "none";
+                        renderPostUI();
+                    }
         }
 
 
@@ -119,6 +121,6 @@ const DIV = 'div',
             });
         }
 
-}
+
 
 
