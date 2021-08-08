@@ -1,4 +1,10 @@
- const DIV = 'div',
+
+
+if(location.pathname !== '/')
+ return;
+document.getElementsByClassName("page").item(0).style.display = "none"
+console.log('location.pathname', location.pathname)
+const DIV = 'div',
             BODY = 'body',
             GRID_CONTAINER = 'grid-container',
             GRID_ITEM = 'grid-item',
