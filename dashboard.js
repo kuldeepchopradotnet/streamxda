@@ -17,9 +17,11 @@
                 header.textContent = 'streamXDA';
                 const body = document.getElementById(BODY);
                 body.appendChild(header);
-                document.getElementsByClassName("page").item(0).style.display = "none";
                 renderPostUI('', '', body);
             }
+          else {
+               document.getElementsByClassName("page").item(0).style.display = "block";
+          }
         }
 
 
