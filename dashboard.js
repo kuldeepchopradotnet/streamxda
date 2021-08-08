@@ -66,7 +66,6 @@ const DIV = 'div',
                 nextbtn.setAttribute('id', NEXT_BTN);
                 nextbtn.setAttribute('data-id', post.nextPageToken)
                 nextbtn.addEventListener('click', ($event) => {
-                    debugger;
                     const nextPageToken = $event.target.getAttribute('data-id');
                     console.log('nextbtn clicked', $event);
                     renderPostUI(nextPageToken, true);
