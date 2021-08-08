@@ -1,4 +1,4 @@
-const DIV = 'div',
+  const DIV = 'div',
             BODY = 'body',
             GRID_CONTAINER = 'grid-container',
             GRID_ITEM = 'grid-item',
@@ -11,29 +11,30 @@ const DIV = 'div',
             HEADER = 'header'
 
         async function loadApp() {
-            if (location.pathname === '/') {
+            if (location.pathname === '/' || location.pathname === '/index.html') {
                 const header = document.createElement(DIV);
                 header.classList.add(HEADER);
                 header.textContent = 'streamXDA';
+                const body = document.getElementById(BODY);
+                body.appendChild(header);
                 document.getElementsByClassName("page").item(0).style.display = "none";
-                renderPostUI();
+                renderPostUI('', '', body);
             }
         }
 
 
-        async function renderPostUI(nextPageToken = "", isEventRegistered = false) {
+        async function renderPostUI(nextPageToken = "", isEventRegistered = false, body = null) {
             const post = await getPosts(nextPageToken);
             if (!post) {
                 return;
             }
             const posts = post.posts;
             const gridlen = posts.length;
-            let container, body;
+            let container;
             if (!isEventRegistered) {
                 container = document.createElement(DIV);
                 container.classList.add(GRID_CONTAINER);
                 container.setAttribute('id', GRID_CONTAINER);
-                body = document.getElementById(BODY);
             }
             else {
                 container = document.getElementById(GRID_CONTAINER);
@@ -80,7 +81,7 @@ const DIV = 'div',
 
         async function getPosts(nextToken = '') {
             console.log('nextToken', nextToken);
-            let url = 'https://www.googleapis.com/blogger/v3/blogs/4489368836732156761/posts?status=live&maxResults=5&fetchBodies=false&fetchImages=true&key=AIzaSyBaYgrLt6mRIYL2N5pAXWGTBx5-tT8LF30';
+            let url = 'https://www.googleapis.com/blogger/v3/blogs/4489368836732156761/posts?status=live&maxResults=9&fetchBodies=false&fetchImages=true&key=AIzaSyBaYgrLt6mRIYL2N5pAXWGTBx5-tT8LF30';
             if (nextToken) {
                 url += '&pageToken=' + nextToken;
             }
