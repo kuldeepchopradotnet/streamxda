@@ -1,6 +1,3 @@
-
-console.log('location.pathname', location.pathname)
-
 const DIV = 'div',
             BODY = 'body',
             GRID_CONTAINER = 'grid-container',
@@ -10,13 +7,17 @@ const DIV = 'div',
             TITLE = 'title',
             GRID_IMG = 'grid-img',
             A = 'a',
-            NEXT_BTN = 'next-btn'
+            NEXT_BTN = 'next-btn',
+            HEADER = 'header'
 
         async function loadApp() {
-                    if(location.pathname === '/'){
-                        document.getElementsByClassName("page").item(0).style.display = "none";
-                        renderPostUI();
-                    }
+            if (location.pathname === '/') {
+                const header = document.createElement(DIV);
+                header.classList.add(HEADER);
+                header.textContent = 'streamXDA';
+                document.getElementsByClassName("page").item(0).style.display = "none";
+                renderPostUI();
+            }
         }
 
 
@@ -120,7 +121,3 @@ const DIV = 'div',
                 xhttp.send();
             });
         }
-
-
-
-
