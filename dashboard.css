@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');        
 
-.grid-container {
+        .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
             background-color: #2196F3;
@@ -33,4 +33,14 @@
             font-weight: 800;
             font-family: 'Roboto', sans-serif;
             padding: 6px;
+        }
+
+        .header {
+            background: blue;
+            color: white;
+            font-weight: 800;
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            padding: 2%;
+            letter-spacing: 0.3rem;
         }
